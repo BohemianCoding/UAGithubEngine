@@ -9,6 +9,8 @@
 #import "UAGithubURLConnection.h"
 #import "NSString+UUID.h"
 
+//#define UALog NSLog
+#define UALog(format,...)
 
 @implementation UAGithubURLConnection
 
@@ -21,7 +23,7 @@
 
         @autoreleasepool 
         {    
-            NSLog(@"New %@ connection: %@", request.HTTPMethod, request);
+            UALog(@"New %@ connection: %@", request.HTTPMethod, request);
 
             NSURLResponse *response = nil;
             NSError *error = nil;
@@ -44,7 +46,7 @@
     
     @autoreleasepool 
     {    
-        NSLog(@"New %@ connection: %@", request.HTTPMethod, request);
+        UALog(@"New %@ connection: %@", request.HTTPMethod, request);
         
         NSURLResponse *response = nil;
         NSError *connectionError = nil;
