@@ -397,6 +397,7 @@
     if (self.isMultiPageRequest)
     {
         [self.multiPageArray addObjectsFromArray:result];
+        UALog(@"%@", @([self.multiPageArray count]));
         successBlock(self.multiPageArray);
     }
     else

@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "UAGithubEngineRequestTypes.h"
 
+//#define UALog NSLog
+#define UALog(format,...)
+
 @interface UAGithubURLConnection : NSURLConnection 
 {
     NSMutableData *data;                   

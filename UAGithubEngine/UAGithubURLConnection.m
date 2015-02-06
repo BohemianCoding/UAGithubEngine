@@ -9,8 +9,6 @@
 #import "UAGithubURLConnection.h"
 #import "NSString+UUID.h"
 
-//#define UALog NSLog
-#define UALog(format,...)
 
 @implementation UAGithubURLConnection
 
